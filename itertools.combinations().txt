@@ -1,0 +1,17 @@
+import itertools
+s1,n=input().split()
+l1=[]
+for i in range(1,int(n)+1):
+    l1=list(itertools.combinations(s1,i))
+    l1.sort()
+
+    s1=sorted(s1)
+    l3=[]
+    
+    for i in l1:
+       i=list(i)
+       i.sort()
+       l3.append(i)
+       l3.sort()    
+    for i in l3:
+        print(''.join(i))
