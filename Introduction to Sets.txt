@@ -1,0 +1,18 @@
+def average(array):
+    array=set(array)
+    s=0
+    sum1=0
+    avg=0
+    for i in array:
+        sum1+=i
+        s+=1
+    avg=sum1/s
+    avg=round(avg,3)   
+    return avg
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
