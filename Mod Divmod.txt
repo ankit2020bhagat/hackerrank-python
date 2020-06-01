@@ -1,0 +1,13 @@
+import operator
+num1=int(input())
+num2=int(input())
+l1=[]
+while num1>num2:
+   div=(operator.floordiv(num1,num2))
+   mod=operator.mod(num1,num2)
+   print(div)
+   print(mod)
+   num1=num1%num2
+l1.append((div,mod))
+for i in l1:
+    print(i)
