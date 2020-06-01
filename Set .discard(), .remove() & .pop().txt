@@ -1,0 +1,30 @@
+ar=[]
+n=int(input())
+ar=[int(i) for i in input().split()]
+ar=set(ar)
+su=0 
+n1=int(input())
+for i in range(0,n1):
+    tmp_str=input()
+   
+    tmp_str_ar=tmp_str.strip().split(" ")
+   
+    cmd=tmp_str_ar[0]
+    
+    
+    
+    if(cmd=="pop"):
+        ar.pop()
+    
+    
+    elif(cmd=="remove"):
+        val=int(tmp_str_ar[1])
+        ar.remove(val)  
+           
+    elif(cmd=="discard"):
+        val=int(tmp_str_ar[1])
+        ar.discard(val)
+    
+for i  in ar:
+    su+=i
+print(su)
