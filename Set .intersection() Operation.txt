@@ -1,0 +1,8 @@
+num1=int(input())
+l1=[int(i) for i in input().split()]
+num2=int(input())
+l2=[int(i) for i in input().split()]
+l1=set(l1)
+l2=set(l2)
+l3=l1.intersection(l2)
+print(len(l3))
