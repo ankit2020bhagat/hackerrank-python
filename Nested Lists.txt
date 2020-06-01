@@ -1,0 +1,21 @@
+lst1=[]
+lst3=[]
+lst2=[]
+for  i in range(int(input())):
+    name=input()
+    num=float(input())
+    lst1.append([name,num])
+  
+
+for i in lst1:
+    lst3.append(i[1])
+lst3 = list(dict.fromkeys(lst3))  
+
+lst3.sort()
+num1=lst3[1]
+for i in lst1:
+    if num1==i[1]:
+       lst2.append(i[0])
+lst2.sort()
+for i in lst2:
+    print(i)     
