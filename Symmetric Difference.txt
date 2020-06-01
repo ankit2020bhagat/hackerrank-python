@@ -1,0 +1,10 @@
+num1=int(input())
+l1=[int(i) for i in input().split()]
+num2=int(input())
+l2=[int(i) for i in input().split()]
+l1=set(l1)
+l2=set(l2)
+l3=list(l1.symmetric_difference(l2))
+l3.sort()
+for i in l3:
+    print(i)
