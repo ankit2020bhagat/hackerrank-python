@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    sum1=0
+    result=0
+    h=0
+    n = int(input())
+    student_marks = {}
+    for i in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+for i in  student_marks:
+    if i==query_name:
+        for j in student_marks[i]:
+            sum1=sum1+j
+            h=h+1
+        result=sum1/h
+        print("%.2f" %(result))
