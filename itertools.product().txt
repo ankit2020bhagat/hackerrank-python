@@ -1,0 +1,6 @@
+import itertools
+l1=[int(i) for i in input().split()]
+l2=[int(i) for i in input().split()]
+l3=list((itertools.product(l1,l2)))
+for i in l3:
+    print(i,end=" ")
