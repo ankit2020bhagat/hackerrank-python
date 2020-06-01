@@ -1,0 +1,15 @@
+import itertools
+s1,n=input().split()
+
+l1=list(itertools.combinations_with_replacement(s1,int(n)))
+l1.sort()
+
+l3=[]
+    
+for i in l1:
+   i=list(i)
+   i.sort()
+   l3.append(i)
+l3.sort()    
+for i in l3:
+    print(''.join(i))
