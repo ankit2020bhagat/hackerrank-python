@@ -1,0 +1,11 @@
+def fun(l1):
+    count=0
+    l1=set(l1)
+    for i in l1:
+        count+=1
+    return count    
+num1=int(input())
+set1=set({})
+for i in range(num1):
+    set1.add(str(input()))
+print(fun(set1))    
