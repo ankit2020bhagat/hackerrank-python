@@ -1,0 +1,8 @@
+import operator
+num1=int(input())
+num2=int(input())
+num3=int(input())
+re=(operator.pow(num1,num2))
+re1=(operator.mod(re,num3))
+print(re)
+print(re1)
