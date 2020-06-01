@@ -1,0 +1,38 @@
+if __name__ == '__main__':
+    a="False"
+    b="False"
+    c="False"
+    d="False"
+    e="False"
+    s = str(input())
+    for i in s:
+         if i.isalnum():
+             a="True"
+         if i.isalpha():
+             b="True"
+         if i.isdigit():
+             c="True"
+         if i.islower():
+             d="True"
+         if i.isupper():
+             e="True"        
+    if a:
+        print(a)
+    else:
+        print(a)
+    if b:
+        print(b)
+    else:
+        print(b)            
+    if c:
+        print(c)
+    else:
+        print(c)     
+    if d:
+        print(d)
+    else:
+        print(d)
+    if e:
+        print(e)
+    else:
+        print(e)
