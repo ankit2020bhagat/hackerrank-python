@@ -1,0 +1,13 @@
+import collections,re
+num=int(input())
+d1=collections.OrderedDict()
+for i in range(num):
+    str1 = re.split(r'(\d+)$',input().strip())
+    item_name=str1[0]
+    item_price=int(str1[1])
+    if item_name not in d1:
+        d1[item_name]=item_price
+    else:
+        d1[item_name]+=item_price
+for i in d1:
+    print(i+str(d1[i]))           
