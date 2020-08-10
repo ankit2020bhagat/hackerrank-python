@@ -1,0 +1,4 @@
+import numpy as np
+np.set_printoptions(sign=' ')
+num,num1=map(int,input().split())
+print(np.eye(num, num1, k = 0))
