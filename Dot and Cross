@@ -1,0 +1,13 @@
+import numpy as np
+num=int(input())
+l1=[]
+l2=[]
+for i in range(num):
+  t=[int(i) for i in input().split()]
+  l1.append(t)
+np_a1=np.array(l1)  
+for i in range(num):
+  t=[int(i) for i in input().split()]
+  l2.append(t)
+np_a2=np.array(l2) 
+print(np_a1.dot(np_a2))     
