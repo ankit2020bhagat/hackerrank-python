@@ -1,0 +1,11 @@
+n,m=map(int,input().split())
+l1=[int(i) for i in input().split()]
+s1=set(map(int,input().split()))
+s2=set(map(int,input().split()))
+h=0
+for i in l1:
+    if i in s1:
+        h+=1
+    if i in s2:
+        h-=1    
+print(h)        
