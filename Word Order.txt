@@ -1,0 +1,11 @@
+from collections import Counter
+num=int(input())
+l1=[]
+for i in range(num):
+    str1=input()
+    l1.append(str1)
+print(len(set(l1)))
+str2=dict(Counter(l1))
+for i in str2:
+    print(str2[i],end=" ")
+    
